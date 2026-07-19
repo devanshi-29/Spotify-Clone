@@ -1,0 +1,233 @@
+*{
+    margin:0px;
+    padding :0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#121212;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:60px;
+    padding:0px 20px;
+    background-color: #1d1d1d;
+}
+
+.nav-left{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    background-color:#393838;
+    color: #a4a2a2;
+    height: 48px;
+    width: 400px;
+    border-radius: 100px;
+    padding: 10px 15px;
+}
+
+.search-bar input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color: white;
+    flex:1;
+}
+
+.search-icon{
+    width:20px;
+}
+
+.logo{
+    width:40px;
+}
+
+.home-button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #393838;
+    border-radius:50%;
+    width:48px;
+    height:48px;
+    border:none;
+    transition:0.3s;
+}
+
+.home-button:hover{
+    background-color: #434343;
+}
+
+.nav-right{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.nav-right a{
+     color:grey;
+     text-decoration:none;
+     font-size:13px;
+     font-weight:800;
+     transition: 0.2s;
+}
+
+.nav-right a:hover{
+     color:white;
+}
+
+.login-button{
+     color: black;
+     background-color: white;
+     padding: 5px 20px;
+     border-radius: 100px;
+     font-weight: 800;
+     transition: 0.3s;
+}
+
+.login-button:hover{
+     background-color:rgb(199, 196, 196);    
+}
+
+.nav-center{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.nav-center a{
+     color:rgb(153, 150, 150);
+     text-decoration:none;
+     font-size:16px;
+     font-weight:500;
+     transition: 0.2s;
+}
+.nav-center a:hover{
+     color:white;
+}
+
+main{
+    display:flex;
+    padding:10px;
+}
+
+.left-sidebar{
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+    width:330px;
+    background-color:#181818 ;
+    border-radius: 10px;
+    border:1px solid #393838;
+    padding :20px;
+}
+
+.library-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.library-header h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+.add-icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #393838;
+    color: white;
+    border-radius:50%;
+    font-size: 20px;
+    width:30px;
+    height:30px;
+    border:none;
+    transition:0.3s;
+}
+
+.add-icon:hover{
+    background-color: #434343;
+}
+
+.playlist-card{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    border-radius: 10px;
+    background-color:#292828;
+    padding:20px;
+}
+
+.playlist-card h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+.playlist-card p{
+    display:flex;
+    justify-content: start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 14px;
+}
+
+.create-playlist{
+     color: black;
+     background-color: white;
+     padding: 5px 20px;
+     border-radius: 100px;
+     font-size: 15px;
+     font-weight: 800;
+     transition: 0.3s;
+     display:inline-block;
+}
+
+.create-playlist:hover{
+     background-color:rgb(199, 196, 196);    
+}
+
+.language-btn{
+     color:white;
+     background:transparent;
+     padding: 5px 20px;
+     border-radius: 100px;
+     font-size: 15px;
+     font-weight: 800;
+     transition: 0.3s;
+     display:inline-block;
+     text-align: center;
+     border: 1px solid white;
+     transition 1s;
+}
+
+.language-btn:hover{
+   font-size:16px; 
+}
+
+.links{
+    display:flex;
+    justify-content:flex-start;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.links a{    
+    color:grey;
+    text-decoration:none;
+    font-size:13px;
+    transition: 0.2s;    
+}
