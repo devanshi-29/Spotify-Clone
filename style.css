@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+.home-button img{
+    width:22px;
+    height:22px;
+}
+
+.logo{
+    width:42px;
+    height:42px;
+    cursor:pointer;
+}
+
+.search-icon{
+    width:20px;
+    height:20px;
+    opacity:0.7;
+}
+
 body{
     background-color:#121212;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -41,7 +58,7 @@ body{
     outline: none;
     background: transparent;
     font-size: 16px;
-    color: white;
+    color: #ffffff;
     flex:1;
 }
 
@@ -120,6 +137,7 @@ body{
 main{
     display:flex;
     padding:10px;
+    gap:10px;
 }
 
 .left-sidebar{
@@ -231,3 +249,190 @@ main{
     font-size:13px;
     transition: 0.2s;    
 }
+
+.main-content{
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+    flex:1;
+    height:calc(100vh - 60px);
+    background-color:#181818 ;
+    border-radius: 10px;
+    border:1px solid #393838;
+    padding :20px;
+    overflow-y: auto;
+}
+.topof-card{
+    display:flex;
+    justify-content: space-between;
+}
+.heading{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-weight :800;
+}
+
+.blocks{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.show-all{
+    color:grey;
+    text-decoration:none;
+    font-size:13px;
+    transition: 0.2s;
+}
+
+.show-all:hover{
+    color:white;
+    text-decoration:underline;
+}
+
+.cards{
+    display:flex;
+    gap:10px;
+}
+
+.card{
+    width: 170px;
+    background:transparent;
+    transition:background-color 0.3s ease;
+    border-radius: 10px;
+    cursor: pointer;
+    padding:10px;
+}
+
+.card:hover{
+    background-color:#292828;
+}
+
+.card h3{
+   color: #ffffff;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size:16px;
+   font-weight: 500;
+}
+
+.card h3:hover{
+    text-decoration: underline;
+}
+
+.card p{
+   color: #b1adad;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size:14px;
+   
+}
+
+.card p:hover{
+    text-decoration: underline;
+}
+
+.card img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.footer{
+    display:flex;
+    gap:30px;
+}
+
+.base-link h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.base-link a{
+    color:grey;
+    text-decoration:none;
+    font-size:13px;
+    transition: 0.2s;
+}
+
+.base-link ul{
+    list-style: none;
+}
+
+.social-media-icon{
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+.social-media-icon img{
+    width: 25px;
+    height: 25px;
+}
+
+.social-media-icon button{
+    width: 25px;
+    height: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    border:none;
+    cursor: pointer;
+}
+
+.base-footer{
+    display: flex;
+    justify-content: end;
+    color: #b1adad;
+}
+
+.premium-banner{
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index:1000;
+
+    width: 100%;
+
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   height :70px;
+   gap:20px;
+   padding:0 20px;
+   background: linear-gradient(to right, #da4ef6, #517af6);
+   
+}
+
+.premium-banner h3{
+   color: #ffffff;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size:14px;
+   font-weight: 800;
+}
+
+.premium-banner p{
+   color:white;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size:14px;
+}
+
+.signup-button{
+    color: black;
+    background-color: white;
+     padding: 5px 20px;
+     border-radius: 100px;
+     font-weight: 800;
+     transition: 0.3s;
+     border:none;
+     cursor: pointer;
+}
+
+.signup-button:hover{
+     background-color:rgb(199, 196, 196);    
+}
+
